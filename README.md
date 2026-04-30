@@ -20,6 +20,15 @@ This project involves:
 3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
 4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
 
+##Tools:
+- **[Datasets](datasets/):** Access to the project dataset (csv files).
+- **[Postgresql]**
+- **[pgAdmin]**
+- **[Git Repository](https://github.com/):**
+- **[DrawIO](https://www.drawio.com/):**
+- **[Notion]**
+- **[Notion Project Steps](https://www.notion.so/Datawarehouse-project-338c0f9cdbb780cdbe1ae7213f0112c6?source=copy_link)**
+
 ## Project Requirements
 
 ### Building the Data Warehouse
@@ -33,8 +42,46 @@ Develop a modern data warehouse using Postgresql to consolidate sales data, embl
 - **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
 - **Scope**: Focus on the latest dataset only;
 - **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
-
 ---
+
+### BI: Analytics & Reporting (Data Analysis)
+
+#### Objective
+Develop SQL-based analytics to deliver detailed insights into:
+- **Customer Behavior**
+- **Product Performance**
+- **Sales Trends**
+
+These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+
+For more details, refer to [docs/requirements.md](docs/requirements.md).
+
+## 📂 Repository Structure
+```
+data-warehouse-project/
+│
+├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+│
+├── docs/                               # Project documentation and architecture details
+│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
+│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
+│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
+│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
+│   ├── data_models.drawio              # Draw.io file for data models (star schema)
+│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+│
+├── scripts/                            # SQL scripts for ETL and transformations
+│   ├── bronze/                         # Scripts for extracting and loading raw data
+│   ├── silver/                         # Scripts for cleaning and transforming data
+│   ├── gold/                           # Scripts for creating analytical models
+│
+├── tests/                              # Test scripts and quality files
+│
+├── README.md                           # Project overview and instructions
+├── LICENSE                             # License information for the repository
+└── requirements.txt                    # Dependencies and requirements for the project
+```
+
 ## License
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
 
